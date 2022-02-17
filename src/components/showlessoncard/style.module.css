@@ -1,0 +1,34 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid white;
+}
+
+.box2 {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.space {
+  margin: 0 1rem;
+}
+
+.page:hover {
+  background: rgb(194, 241, 239);
+}
+
+.current {
+  background: rgb(194, 241, 239);
+}

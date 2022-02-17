@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* navbar */
+.navbar {
+  background-color: #2b3636;
+  color: white;
+  width: 100vw;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+}
+
+.ul li {
+  display: flex;
+  align-items: center;
+  height: 9vh;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.ul li:nth-child(1):hover {
+  background: rgb(32, 40, 40);
+  color: none;
+  cursor: pointer;
+}
+
+.ul li:nth-child(2):hover {
+  background: rgb(32, 40, 40);
+  color: #fff;
+  cursor: pointer;
+}
+
+.ul li:nth-child(3):hover {
+  background: rgb(32, 40, 40);
+  color: #fff;
+  cursor: pointer;
+}
+
+.ul li:nth-child(4):hover {
+  background: rgb(32, 40, 40);
+  color: #fff;
+  cursor: pointer;
+}
+
+.ul li:nth-child(6):hover {
+  background: rgb(32, 40, 40);
+  color: #fff;
+  cursor: pointer;
+}
+
+.ul li:nth-child(5):hover {
+  color: #fff;
+  cursor: default;
+}
+
+.container-navbar {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 1px 15px;
+  margin: 2px 0;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  background-color: #2dbbb7;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #1c9e9a;
+}
+
+/* 
+hero
+---- 
+*/
+.heroBlock {
+  background-position: 50% 100%;
+  background-size: cover;
+  height: 82vh;
+}
+
+.heroBlock .container-fluid {
+  display: block !important;
+}
+
+.heroBlock .ant-carousel,
+.heroBlock .ant-carousel div {
+  height: 100%;
+}
+
+.heroBlock .slick-dots li button {
+  background: #000 !important;
+}
+
+.heroBlock .slick-dots li.slick-active button {
+  background: #1890ff !important;
+}
+
+.heroBlock .content {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 70px;
+}
+
+.heroBlock h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 30px;
+}
+
+.heroBlock p {
+  margin: 0 0 30px;
+}
+
+.heroBlock .btnHolder {
+  height: auto !important;
+}
+
+.heroBlock .btnHolder button,
+.heroBlock .btnHolder .fas {
+  margin: 0 10px 0 0;
+}
+
+@media (max-width: 1400px) {
+  .container-navbar {
+    width: 80%;
+  }
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 700) {
+  .navbar {
+    padding: 3rem 0;
+  }
+
+  .container-navbar {
+    width: 90%;
+    align-items: center;
+  }
+
+  .list {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ul {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    background-color: #2b3636;
+    opacity: 0.9;
+  }
+
+  .menu ul {
+    padding-left: 1rem;
+    list-style: none;
+    line-height: 2;
+  }
+
+  .menu ul li a {
+    font-size: x-large;
+    text-decoration: none;
+  }
+
+  .line {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+  }
+
+  .line div {
+    width: 50px;
+    height: 5px;
+    background: #2cbbb7;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 3rem 0;
+  }
+
+  .container-navbar {
+    width: 80%;
+    align-items: center;
+  }
+
+  .list {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ul {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    overflow: hidden;
+    background-color: #2b3636;
+    opacity: 0.9;
+  }
+
+  .menu ul {
+    list-style: none;
+    line-height: 2;
+  }
+
+  .menu ul li a {
+    font-size: xx-large;
+    text-decoration: none;
+  }
+
+  .line {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 999;
+  }
+
+  .line div {
+    width: 50px;
+    height: 5px;
+    background: #2cbbb7;
+  }
+}

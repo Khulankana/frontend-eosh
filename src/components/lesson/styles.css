@@ -1,0 +1,17 @@
+.rec.rec-carousel-wrapper .rec-carousel button {
+  background: #2b3636;
+  color: #fff;
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec {
+  box-shadow: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
+  background: #2b3636;
+}
+
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}

@@ -1,0 +1,106 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background: #fafafa;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+.container {
+    width: 80%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.header div {
+    display: flex;
+}
+.category div {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    color: rgb(33, 35, 56);
+    list-style: none;
+    position: absolute;
+    background: #fafafa;
+    font-weight: 400;
+    padding: 0.5rem 0 ;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4%;
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 6px 12px 0px;
+}
+.list li div {
+    padding: 0.5rem 1rem;
+}
+.list li div:hover {
+    background: #f1f1f1;
+    cursor: pointer;
+}
+.all {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    color: rgb(44, 187, 183);
+    transition: all 0.5s;
+}
+.all:hover {
+    transform: scale(1.1);
+}
+.category {
+    border-radius: 20px;
+    background: #fefefe;
+    padding: 1rem 2rem;
+}
+.category h5 {
+    font-size: large;
+}
+.dropdown {
+    margin-top: 8px;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(44, 187, 183);
+}
+.search {
+    border: 1px solid #cccccc;
+    padding: 1rem;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+}
+.search:focus {
+    outline: none;
+    border: 1px solid rgb(44, 187, 183);
+}
+.searchicon {
+    border: 1px solid #cccccc;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s;
+    background: white;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.searchicon:hover {
+    transform: scale(1.1);
+}
+@media(max-width: 700px ){
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .category {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,47 @@
+.box {
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+  /* color: rgb(44, 187, 183); */
+  color: black;
+  border: 0.1px solid rgba(44, 187, 183, 0.2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box:hover .boxtext h3 {
+  color: rgb(44, 187, 183);
+}
+
+.box:hover {
+  box-shadow: 1px 1px 1px 0 rgba(44, 187, 183, 0.5),
+    -1px -1px 1px 0 rgba(44, 187, 183, 0.5);
+}
+
+.box .boximage {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .boximage img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+
+.box .boxtext {
+  flex: 1;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 1px solid #f1f1f1;
+}
